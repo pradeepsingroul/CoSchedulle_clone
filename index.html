@@ -12,7 +12,7 @@
           background-color: #f8f8f8;
       }
       #navbar{
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -91,7 +91,7 @@
       }
       #first_partOFnavbar{
           height: 100%;
-          width: 45%;
+          width: 40%;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -99,7 +99,7 @@
       #secondPartOfNavbar{
         
           height: 100%;
-          width: 30%;
+          width: 26%;
           display: flex;
           align-items: center;
           justify-content: space-around
@@ -253,6 +253,11 @@
            margin-top: -20px;
             
         }
+        .anchor>span{
+            font-size: 14px;
+            font-weight: bold;
+            color: #4b4b4b;
+        }
     </style>
 </head>
 <body>
@@ -375,11 +380,17 @@
                         </div>
                     </div>
                 </a>
-                <a class="anchor"  id="Pricing" href="">Pricing</a>
+                <a class="anchor"  id="Pricing" href="">
+                    <span>Pricing</span>
+                </a>
             </div>
             <div id="secondPartOfNavbar">
-                <a class="anchor" href="">Sign In</a>
-                <a id="changes" class="anchor" href="">Get A Demo</a>
+                <a class="anchor" href="">
+                    <span>Sign In</span>
+                </a>
+                <a id="changes" class="anchor" href="">
+                    <span>Get A Demo</span>
+                 </a>
                 <button id="create_my_calender">Create My Calender</button>
             </div>
         </div>
