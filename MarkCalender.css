@@ -1,0 +1,344 @@
+* {
+  margin: 0px;
+}
+
+#top_container {
+  width: 100%;
+  height: 600px;
+  background-color: #f9a97d;
+}
+#nav-section {
+  border: 1px solid green;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#logo-image {
+  width: 180px;
+  height: 41px;
+  background-color: #f9a97d;
+}
+.navbar-header {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+} */
+.navbar-header {
+  font-size: large;
+}
+#marketing-calendar-header {
+  height: 130px;
+  width: 60%;
+
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 80px;
+}
+#marketing-calendar-title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+#marketing-calendar-header-subtitle {
+  width: 60%;
+  height: 50px;
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+#marketing-calendar-subtitle {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+#marketing-calendar-img-div {
+  margin: auto;
+  border: 1px solid red;
+  height: 450px;
+  width: 1000px;
+  margin-top: -220px;
+}
+#marketing-calendar-img {
+  height: 450px;
+  width: 1000px;
+}
+/* ------------------------------------------------------------- */
+#top-container-infobox {
+  border: 1px solid green;
+  height: 700px;
+  width: 100%;
+}
+
+#marketing-calendar-hero-heading {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid blue;
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+  color: rgb(102, 102, 102);
+}
+
+#marketing-calendar-hero-heading-para1 {
+  border: 1px solid blue;
+  height: 100px;
+  width: 100%;
+  /* margin: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  word-spacing: 9px;
+  color: grey;
+  margin-top: 10px;
+  line-height: 30px;
+}
+#marketing-calendar-hero-heading-para2 {
+  border: 1px solid blue;
+  height: 100px;
+  width: 100%;
+  /* margin: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  word-spacing: 9px;
+  color: grey;
+  margin-top: 30px;
+  line-height: 30px;
+}
+#box {
+  width: 50%;
+  height: 350px;
+  border: 1px solid green;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* ------------------------------------------------------------- */
+
+#marketing-calendar-orange-div {
+  width: 100%;
+  height: 1200px;
+  background-color: #f4ebe5;
+  position: relative;
+  border: 1px solid darkblue;
+}
+#marketing-calendar-orange-img-div1 {
+  width: 50%;
+  height: 400px;
+  border: 1px solid red;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 25%;
+}
+#marketing-calendar-orange-img1 {
+  margin-top: -22px;
+}
+#market-percentage-div {
+  height: 250px;
+  width: 80%;
+  /* border: 1px solid blueviolet; */
+  margin-left: 10%;
+  margin-top: 300px;
+  background-color: white;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+}
+#market-percentage-data-img-div {
+  width: 140px;
+  height: 140px;
+  /* border: 1px solid rgb(189, 14, 14); */
+  margin-top: 62.5px;
+  margin-left: 5%;
+}
+#market-percentage-data-img {
+  width: 140px;
+  height: 140px;
+}
+#market-percentage-data-para {
+  width: 600px;
+  height: 130px;
+  /* border: 1px solid black; */
+  margin-top: 75px;
+  margin-left: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 35px;
+  color: grey;
+}
+#statistics-para {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+
+  color: rgb(159, 159, 159);
+}
+#statistics-para:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#marketing-statistics-para-info {
+  width: 50%;
+  height: 300px;
+  border: 1px solid green;
+  /* margin: auto; */
+  margin-top: 700px;
+  position: absolute;
+  margin-left: 25%;
+}
+#marketing-calendar-hero-heading1 {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid blue; */
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+  color: rgb(102, 102, 102);
+}
+#marketing-calendar-hero-heading-para101 {
+  /* border: 1px solid blue; */
+  height: 70px;
+  width: 93%;
+  /* margin: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  word-spacing: 5px;
+  color: grey;
+  margin-top: 20px;
+  line-height: 30px;
+}
+#marketing-calendar-hero-heading-para202 {
+  /* border: 1px solid blue; */
+  height: 80px;
+  width: 92%;
+  /* margin: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  word-spacing: 5px;
+  color: grey;
+  margin-top: 20px;
+  line-height: 30px;
+}
+#marketing-calendar-orange-img-div2 {
+  width: 50%;
+  height: 400px;
+  border: 1px solid red;
+  position: absolute;
+  margin-top: 1000px;
+  margin-left: 25%;
+}
+#marketing-calendar-orange-img2 {
+  margin-top: -22px;
+}
+
+/* ------------------------------------------------------------- */
+
+#Cooks-quote {
+  border: 1px solid black;
+  height: 250px;
+  width: 700px;
+  margin: auto;
+  margin-top: 300px;
+}
+#double-inverted-quamma {
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+}
+
+#Cooks-quote-para {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  word-spacing: 0px;
+  color: rgb(115, 113, 113);
+  margin-top: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: -10px;
+}
+#beverly-cook {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  color: grey;
+  margin-left: 10%;
+}
+/* ------------------------------------------------------------- */
+
+#dark-orange-box {
+  height: 250px;
+  width: 80%;
+  border: 1px solid blueviolet;
+  margin-left: 10%;
+  background-color: white;
+  margin-top: 100px;
+  border-radius: 15px;
+  background-color: #f9a97d;
+  text-align: center;
+}
+
+#dark-orange-box-para {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  margin-top: 75px;
+}
+/* ------------------------------------------------------------- */
+#feature-box-1 {
+  border: 1px solid black;
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+}
+
+#feature-box-img-div-1 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#feature-box-para-1 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+}
+#feature-box-img-1 {
+  width: 500px;
+  height: 500px;
+}
+#feature-box-para-1 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+h2 + p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  margin-top: 10px;
+  color: grey;
+}
+
+/* ------------------------------------------------------------- */
+#feature-box-2 {
+  border: 1px solid black;
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+}
