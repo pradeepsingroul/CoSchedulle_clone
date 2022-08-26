@@ -253,6 +253,7 @@
   height: 60px;
   width: 60px;
   border: 1px solid black;
+  color: #f9a97d;
 }
 
 #Cooks-quote-para {
@@ -341,4 +342,177 @@ h2 + p {
   width: 70%;
   margin: auto;
   margin-top: 150px;
+  display: flex;
 }
+
+#feature-box-img-div-2 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#feature-box-para-2 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+}
+#feature-box-img-2 {
+  width: 500px;
+  height: 500px;
+}
+#feature-box-para-2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+h2 + p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  margin-top: 10px;
+  color: grey;
+}
+
+/* ------------------------------------------------------------- */
+#feature-box-3 {
+  border: 1px solid black;
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+}
+
+#feature-box-img-div-3 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#feature-box-para-3 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+}
+#feature-box-img-3 {
+  width: 500px;
+  height: 500px;
+}
+#feature-box-para-3 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+h2 + p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  margin-top: 10px;
+  color: grey;
+}
+
+/* ------------------------------------------------------------- */
+
+#feature-box-4 {
+  border: 1px solid black;
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+}
+
+#feature-box-img-div-4 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#feature-box-para-4 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+}
+#feature-box-img-4 {
+  width: 500px;
+  height: 500px;
+}
+#feature-box-para-4 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+h2 + p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  margin-top: 10px;
+  color: grey;
+}
+
+/* ------------------------------------------------------------- */
+#last-feaure-box {
+  height: 600px;
+  width: 90%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
+
+#last-feaure-box-header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(40, 40, 40);
+
+}
+
+#last-feaure-box-img{
+
+  height: 550px;
+  width: 900px;
+}
+
+
+
+/* ------------------------------------------------------------- */
+#rollins-quote {
+  border: 1px solid black;
+  height: 250px;
+  width: 700px;
+  margin: auto;
+  margin-top: 100px;
+}
+#double-inverted-quamma1 {
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  color: #f9a97d;
+}
+
+#rollins-quote-para {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  word-spacing: 0px;
+  color: rgb(115, 113, 113);
+  margin-top: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: -10px;
+}
+#rollins {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  color: grey;
+  margin-left: 10%;
+}
+
+/* ------------------------------------------------------------- */
