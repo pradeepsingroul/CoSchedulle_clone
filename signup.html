@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #e6e1e1;
+        }
+        #signup_div{
+           padding: 25px;
+            text-align: center;
+          /* border: 1px red solid; */
+          height: 900px;
+          width: 600px;
+          margin: auto;
+          background-color: rgb(255, 255, 255);
+        }
+        .signup_p{
+            color: #4b4b4b;
+            font-size: 16px;
+            margin-top: -22px;
+            font-family: sans-serif;
+            margin-bottom: 40px;
+           
+        }
+       #h1{
+        color: #4b4b4b;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+        
+       
+      
+       .input_div{
+        margin: auto;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        height: 47%;
+        width: 90%;
+      
+       
+       }
+       .inp{
+        height: 50px;
+        border-radius: 5px;
+       border: none;
+       box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(214, 221, 230, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+       padding: 0px 15px;
+        margin-top: -19px;
+        /* background-color: rgb(202, 211, 220); */
+       }
+       .inp:hover{
+        box-shadow: rgba(235, 165, 44, 0.82) 0px 3px 8px;
+       }
+       label{
+        font-size: 14px;
+        font-family: sans-serif;
+       color: #979494;
+       }
+       .input2_div{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25%;
+        justify-content: space-around;
+        width: 80%;
+       }
+       .input2_div>div{
+        display: flex;
+        /* margin-top: -45px; */
+        margin-bottom: 20px;
+        border-radius: 7px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        border: 1px rgb(97, 93, 93) solid;
+        height: 40px;
+       }
+       .input2_div>div:hover{
+        background-color: #e0dddd;
+       }
+       #gfa{
+        height: 20px;
+        margin-right: 5px;
+       }
+       #sign_in{
+        color: white;
+        border-radius: 7px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: rgb(222, 122, 51);
+     
+       }
+       #sign_in:hover{
+        background-color: rgb(222, 97, 51);
+       }
+      
+       #last{
+       
+        margin: auto;
+        font-size: 14px;
+        text-align: left;
+        width: 85%;
+       }
+       #signup_div>div{
+        height:75%;
+        width: 85%;
+        margin: auto;
+        /* border: 1px red solid; */
+       padding: 20px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       }
+    </style>
+</head>
+<body>
+        <div id="signup_div">
+            <h1 id="h1">Create My Marketing Calendar</h1>
+            <p class="signup_p">Free for life. No credit card required.</p>
+           <div>
+                <div class="input_div">
+                    <label for="">Full Name</label>
+                    <br>
+                    <input id="name" placeholder="Full Name" class="inp" type="text">
+                    <br>
+                    <label for="">Email Address</label>
+                   
+                    <br>
+                    <input id="email" placeholder=" Work Email Address" class="inp"  type="text">
+                    <br>
+                    <label for="">Password</label>
+                    <br>
+                    
+                    <input id="password" placeholder="Password (minimum 8 character)" class="inp" type="text">
+                   
+                    <button onclick="func()" id="sign_in">Sign Up</button>
+                </div>
+                   <p class="or">or</p>
+                   <div class="input2_div">
+                    <div>
+                        <img id="gfa" src="https://accounts.coschedule.com/img/sso-providers/Google.svg" alt="">
+                        <p>Continue with Google</p>
+                    </div>
+                    <div>
+                        <img id="gfa" src="https://accounts.coschedule.com/img/sso-providers/Facebook.svg" alt="">
+                        <p>Continue with Facebook</p>
+                    </div>
+                    <div>
+                        <img id="gfa" src="https://accounts.coschedule.com/img/sso-providers/apple.svg" alt="">
+                        <p>Continue with Apple</p>
+                    </div>
+                   </div>
+                  
+                   <p id="last">By clicking <a href="">"Get Started Now"</a> , you agree to CoSchedule’s terms of service, end user agreement, and privacy policy; you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
+                 
+            </div>
+        
+        
+        
+        </div>
+</body>
+</html>
+
+<script>
+
+   
+
+
+
+
+  let userarr = JSON.parse(localStorage.getItem("signuPData"))||[]
+  class User{
+     
+      constructor(){
+
+      }
+      validateUsername(username){
+      let value = username.includes("@") ? false: true
+       return value        
+  
+      }
+  
+      validatePassword(password){
+          let pvalue = password.includes("123") ? false : true
+         
+          return pvalue
+     
+      }
+      signUp(username,email,password){
+        if(username==""||email==""||password==""){
+          alert ("fill this form")
+        }else{
+           let ans = false
+           for(let i = 0; i<userarr.length&&ans==false; i++){
+           if(userarr[i].email==email){
+            ans=true
+           } 
+          }
+          if(ans==false){
+            let Isvalidated = false;
+            Isvalidated =  this. validatePassword(password) && this.validateUsername(username)
+            if(Isvalidated){
+                this.username = username,
+                this.password= password,
+                this.email = email
+                
+                userarr.push(this)
+                localStorage.setItem("signuPData",JSON.stringify(userarr))
+              alert ("user register successfully")
+            }else{
+                alert ("please enter correct details")
+            }
+          }else{
+            alert ("user already signup")
+          }
+        }
+      }
+  }
+
+  
+  function func(){
+  
+  console.log(userarr)
+   let name = document.querySelector("#name").value
+   let email = document.querySelector("#email").value
+   let password = document.querySelector("#password").value
+    let user1 = new User()
+    user1.signUp(name,email,password)
+    
+ }
+    
+    
+</script>
