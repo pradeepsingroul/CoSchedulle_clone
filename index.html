@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body{
+          
+            height: 650px;
+            background-color: #f8f8f8;
+        }
+        #navbar{
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            width: 100%;
+           
+        }
+        .anchor>span{
+            font-size: 14px;
+            font-weight: bold;
+            color: #4b4b4b;
+        }
+        #why_coschedule{
+           
+            position: relative;
+            cursor: pointer;
+        }
+        .mouseenter_in_why{
+            position: absolute;
+            top: 50px;
+            padding: 30px;
+            display: none;
+            background-color: white;
+            width: 300px;
+            border-radius: 10px;
+            height: 250px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+       
+        .mouseenter_in_why>div>p{
+            margin-top: -10px;
+            font-size: 16px;
+            color: #4b4b4b;
+        }
+        .mouseenter_in_why>div>h3{
+            font-size: 18px;
+            color: #4b4b4b;
+        }
+        #why_coschedule:hover .mouseenter_in_why{
+          display: block;
+        }
+        #products{
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+        .mouse_enter{
+            position: absolute;
+            top: 50px;
+            left: -150px;
+            z-index: 1;
+            display: none;
+            background-color: white;
+            width: 700px;
+            border-radius: 10px;
+            height: 350px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #products:hover .mouse_enter{
+          display: block;
+        }
+        #Resources{
+            position: relative;
+            cursor: pointer;
+        }
+        .mouseenter_in_Resources_{
+          
+            position: absolute;
+            top: 50px;
+            left: -450px;
+            display: none;
+            background-color: white;
+            width: 1000px;
+            border-radius: 10px;
+            height: 380px;
+            
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #Resources:hover .mouseenter_in_Resources_{
+          display: block;
+        }
+        #first_partOFnavbar{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #secondPartOfNavbar{
+          
+            height: 100%;
+            width: 28%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around
+        }
+        .anchor{
+            color: #2f2f2f;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        #create_my_calender{
+            height: 40px;
+           background-color: #f37e5d;
+           color: #ffffff;
+           padding: 10px;
+           border: none;
+           width: 200px;
+           border-radius: 5px;
+        }
+       #GetStartedFree{
+        height: 40px;
+           background-color: #f37e5d;
+           color: #ffffff;
+           padding: 10px;
+           border: none;
+           width: 200px;
+           border-radius: 5px;
+       }
+        #under_navbar{
+          
+         
+            margin: auto;
+            width: 55%;
+            margin-top: 100px;
+            text-align: center;
+        }
+        .para1{
+            font-family: sans-serif;
+            color: #4b4b4b;
+            margin-top: -22px;
+            font-size:18px;
+        }
+        .para2{
+            font-family: sans-serif;
+            color: #4b4b4b;
+            font-size:14px;
+           
+        }
+        #head{
+            font-family: sans-serif;
+            color: #4b4b4b;
+            font-size: 50px;
+        }
+        #image_stable_div{
+            background-color: white;
+            height: 600px;
+           
+        }
+        #image_absolute{
+            position: absolute;
+            top: 470px;
+            left: 9.6%;
+        }
+        .fobes_h2{
+            color: #4b4b4b;
+            font-size: 30px;
+            font-family: sans-serif;
+           
+        }
+        #forbs_images{
+            text-align: center;
+            position: relative;
+            top: 360px;
+            left: 9.2%;
+            height: 250px;
+            width: 78%;
+        }
+        .image_in_side_absolute_image{
+           margin-left: 23px;
+           margin-top: 10px;
+        }
+        .our_products_div{
+            height: 1200px;
+            width: 100%;
+            margin-top: 50px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border: 1px white solid;
+            background-color: #f8f8f8;
+        }
+        #main_pages_div{
+           
+            width: 65%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,470px);
+            grid-template-rows: repeat(2,470px);
+            gap: 35px;
+        }
+        #main_pages_div>div{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            
+        }
+        #our_products{
+            margin-bottom: 70px;
+            color: #4b4b4b;
+            font-size: 30px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        #color_image_of_main_div{
+            height: 130px;
+            width: 100%;
+          
+        }
+        #color_image_of_main_div>img{
+             height: 100%;
+             width: 100%;
+        }
+        #innertext_div{
+            width: 380px;
+            position: relative;
+            top: -45px;
+            left: 35px;
+        }
+        .explore_more1{
+            font-family: sans-serif;
+            color: #2f2f2f;
+            border-radius: 5px;
+            background-color: #edd0c0;
+            padding: 8px;
+            border: none;
+        }
+        .explore_more3{
+            background-color: #cddaf3;
+            font-family: sans-serif;
+            color: #2f2f2f;
+            border-radius: 5px;
+            padding: 8px;
+            border: none;
+        }
+        .explore_more4{
+            background-color: #ddd3f5;
+            font-family: sans-serif;
+            color: #2f2f2f;
+            border-radius: 5px;
+            padding: 8px;
+            border: none;
+        }
+        #marketingH3{
+            font-size: 22px;
+            color:#4b4b4b;
+            font-family: sans-serif;
+        }
+        #marketingP{
+            font-size: 15px;
+            color: #4b4b4b;
+            font-family: sans-serif;
+        }
+        #chota_image{
+            height: 52px;
+        }
+        #svg{
+            background-color: #ffffff;
+        }
+        #main{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+         
+        }
+        #popup1{
+           
+            height: 80%;
+            width: 55%;
+           
+        }
+        #popup1>p{
+           
+            color: #4b4b4b;
+            font-size: 20px;
+        }
+        #popup2{
+            height: 80%;
+            width: 35%;
+            
+        }
+        #popup2>div>p{
+            color: #4b4b4b;
+            font-size: 14px;
+        }
+        #andar1{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            display: flex;
+            height: 30%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+
+        }
+        #andar1>img{
+            height: 35px;
+        }
+        #text{
+            margin-top: -25px;
+            margin-left: 10px;
+        }
+        #text>p{
+            margin-top: -10px;
+            font-size: 16px;
+        }
+        #text>h2{
+            font-size: 26px;
+        }
+        #popup_svg{
+            height: 50px;
+        }
+        #popup_svg_div{
+            display: flex;
+            align-items: center;
+            margin-top: -20px;
+        }
+        #popup_svg_div>h3{
+            font-size: 20px;
+        }
+        /* #andar2{
+            display: flex;
+        } */
+        
+        .id{
+          
+            height: 100%;
+           
+            width: 300px;
+        }
+        #header{
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        #svg_tools{
+           height: 50px;
+           width: 50px;
+           
+        }
+        #tools{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            display: flex;
+           
+            height: 22%;
+            margin-top: 10px;
+        }
+        #tools>div>h4{
+            color: #4b4b4b;
+            margin-left: 10px;
+            font-size: 18px;
+            margin-top: 7px;
+        }
+        #tools>div>p{
+           color: #4b4b4b;
+           margin-left: 10px;
+           font-size: 16px;
+           margin-top: -20px;
+            
+        }
+        .id>h3{
+            text-align: center;
+            color: #4b4b4b;
+            font-size: 25px;
+        }
+        .id>div>p{
+            color: #4b4b4b;
+            margin-left: 18px;
+            font-size: 16px;
+         
+        }
+        .id>div>h3{
+            color: #4b4b4b;
+            margin-left: 10px;
+            font-size: 18px;
+           
+        }
+        #shadow{
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+        }
+        #below_main_div{
+            width: 100%;
+            height: 580px ;
+           
+        }
+        #the_fastest{
+            text-align: center;
+            width: 80%;
+            height: 150px;
+            margin: auto;
+        }
+        #the_fastest>h2{
+            margin-top: 90px;
+            color: #4b4b4b;
+        }
+        #the_fastest>p{
+            margin-top: -15px;
+            color: #4b4b4b;
+
+        }
+        #dede_kuchh_main{
+         
+            width: 80%;
+            height: 350px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            align-items: center;
+        }
+        #dedo_kuchh_v:hover{
+            box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+        }
+        #dedo_kuchh_v{
+            box-shadow: rgba(79, 78, 78, 0.35) 0px 5px 15px;
+           
+            width: 25%;
+            padding: 15px;
+            height: 90%;
+            text-align: center;
+        }
+        #dedo_kuchh_v>h2{
+            font-size: 50px;
+            color: #4b4b4b;
+        }
+        #dedo_kuchh_v>h4{
+            font-size: 24px;
+            margin-top: -47px;
+            color: #4b4b4b;
+        }
+        #dedo_kuchh_v>p{
+            font-size: 22px;
+            color: #4b4b4b;
+        }
+        .dedo>img{
+            height: 85px ;
+            margin-top: 50px;
+        }
+        #demo_request{
+            border: 1px red solid;
+            height: 230px;
+            background-color: rgba(237, 115, 70, 0.925);
+            text-align: center;
+        }
+        #demo_request>h2{
+            margin-top: 60px;
+            font-size: 28px;
+            color: white;
+            font-family: sans-serif;
+        }
+        #demo_request_button{
+            height: 50px;
+            padding: 0px 15px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            color: rgba(218, 68, 14, 0.925);
+           
+        }
+        #footer{
+            display: flex;
+            background-color: #f8f8f8;
+            height: 600px;
+        }
+        #footer_divs{
+           position: absolute;
+           right: 200px;
+            gap: 5px 50px;
+           margin-top: 50px; 
+           
+            display: grid;
+           
+            grid-template-columns: repeat(3,250px);
+            grid-template-rows: repeat(2,250px)
+        }
+        #footer_divs>div{
+            padding: 15px;
+           
+
+        }
+        #last_div{
+           
+            height: 280px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+       
+        #footer_divs>div>p{
+            color: #4b4b4b;
+            font-size: 15px;
+            margin-top: -5px;
+          
+        }
+        #footer_divs>div>h3{
+            
+            font-size: 18px;
+            margin-top: -12px;
+          
+        }
+        .explore_more1>a{
+          text-decoration: none;
+        color: #4b4b4b;
+         }
+        #img_div{
+            margin-top: -20px;
+            display: flex;
+            align-items: center;
+        }
+        #footer_image{
+            height: 20px;
+        }
+        #img_div>p{
+            color: #4b4b4b;
+            font-size: 15px;
+           
+        }
+        #last_div>div{
+            margin: auto;
+            width: 60%;
+            display: flex;
+            align-items: center;
+           
+        }
+        #last_div_svg{
+            height: 50px;
+        }
+        #last_div_images{
+            justify-content: space-around;
+        }
+        #last_div_images>img{
+            height: 50px;
+        }
+        .last_div_p{
+            margin-top: -20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="body">
+  
+        <div id="navbar">
+            <div id="first_partOFnavbar">
+                <svg id="logo"x="0" viewBox="0 0 300 68" style="enable-background:new 0 0 300 68" xml:space="preserve" width="180" height="41" alt="CoSchedule Logo" class="cos-logo logo-color"><style>.cos-logo-full-color_svg__st0{fill:#323248}</style><path class="cos-logo-full-color_svg__st0" d="M285.2 28.2c-6.1 0-10.6 4.7-10.6 11.3s4.4 11.3 10.6 11.3c3.5 0 6.4-1.3 7.8-2.5 1.1-.9 1.2-1.1.3-2.3-.1-.2-.7-1-.9-1.2-.7-1-1.1-.8-2.1-.2l-.2.1c-1.6 1-3.1 1.4-4.7 1.4-2.8 0-5.5-2.4-6-5.2h13.8c1.1 0 1.5-.4 1.6-1.4.1-.4.1-1.1.1-1.5.1-5.6-4-9.8-9.7-9.8zm-5.6 8.6c.6-2.5 2.9-4.2 5.6-4.2 2.4 0 4.5 1.8 4.9 4.2h-10.5zM116.3 28.2c-6.1 0-11 5-11 11.2 0 6.3 4.9 11.3 11 11.3s11-5.1 11-11.3c0-6.2-4.9-11.2-11-11.2zm0 17.9c-3.4 0-6.1-3-6.1-6.7s2.7-6.6 6.1-6.6c3.4 0 6.1 2.9 6.1 6.6 0 3.8-2.7 6.7-6.1 6.7zM138.8 32c-3.9-1.5-6-3.1-6-5.7 0-1.7 1.4-4.1 5.4-4.1 2.8 0 6.1 2.1 6.4 2.3.7.4 1.3.1 1.7-.5.4-.5.8-1.2 1.2-1.7.5-.7.1-1.3-.3-1.5-.5-.3-4-2.7-8.8-2.7-7.5 0-10.4 4.9-10.4 8.4 0 5.3 3.8 7.7 8.6 9.6 4.7 1.9 7.2 3.6 7.2 6.3 0 2.3-2.1 4.2-5.4 4.2-3.7 0-7.3-2.9-7.6-3.1-.5-.4-1.2-.2-1.6.4-.4.6-.8 1.3-1.2 1.9-.5.8-.1 1.1.3 1.5.8.7 4.4 3.6 10.2 3.6 6.2 0 10.6-3.9 10.6-8.6-.1-5.6-4.8-8.1-10.3-10.3zM102.4 43.1c-.3-.2-.7-.3-1 0-2.1 1.7-4.3 3-7.5 3-6.2 0-11-5.4-11-11.7 0-6.3 4.7-11.8 10.9-11.8 2.7 0 5.5 1.2 7.5 3 .4.4.8.4 1.1 0l1.9-2c.3-.4.3-.9 0-1.3-3-2.7-6.2-4.2-10.6-4.2C85 18.1 78 25.4 78 34.5s7 16.3 15.7 16.3c3.9 0 7.6-1.4 10.6-4.4.3-.3.4-.9 0-1.2l-1.9-2.1zM237.8 18.1h-2.5c-.6 0-1.1.5-1.1 1.1V30c-1.7-1.2-3.7-1.9-5.9-1.9-5.9 0-10.7 5-10.7 11.2 0 6.3 4.8 11.3 10.7 11.3 2.2 0 4.2-.7 5.9-1.9v.2c0 .6.5 1.1 1.1 1.1h2.5c.6 0 1.1-.5 1.1-1.1V19.3c0-.6-.5-1.2-1.1-1.2zm-9.6 28c-3.3 0-5.9-3-5.9-6.7s2.6-6.6 5.9-6.6c3.3 0 5.9 2.9 5.9 6.6 0 3.8-2.6 6.7-5.9 6.7zM205.3 28.2c-6.1 0-10.6 4.7-10.6 11.3s4.4 11.3 10.6 11.3c3.5 0 6.4-1.3 7.8-2.5 1.1-.9 1.2-1.1.3-2.3-.1-.2-.7-1-.9-1.2-.7-1-1.1-.8-2.1-.2l-.2.1c-1.6 1-3.1 1.4-4.7 1.4-2.8 0-5.5-2.4-6-5.2h13.8c1.1 0 1.5-.4 1.6-1.4.1-.4.1-1.1.1-1.5.1-5.6-4-9.8-9.7-9.8zm-5.6 8.6c.6-2.5 2.9-4.2 5.6-4.2 2.4 0 4.5 1.8 4.9 4.2h-10.5zM183.7 28.2c-2.8 0-4.9 1.1-6.1 2V19.3c0-.6-.5-1.1-1.1-1.1H174c-.6 0-1.1.5-1.1 1.1v29.8c0 .6.5 1.1 1.1 1.1h2.5c.6 0 1.1-.5 1.1-1.1V35.4c.6-.6 2.9-2.4 5.9-2.4 2.6 0 3.9 1.7 3.9 5v11.2c0 .6.5 1.1 1.1 1.1h2.6c.6 0 1.1-.5 1.1-1.1V38c0-6.3-3.1-9.8-8.5-9.8zM169.9 43.9l-.6-.4c-.9-.7-1.3-.9-2.4.2-.1.1-.3.2-.4.4-1 1-2.1 2.1-4.5 2.1-3.4 0-6-2.9-6-6.6 0-3.7 2.7-6.5 6.1-6.5 1.6 0 3.1.7 4.2 1.9l.1.1.2.2c.6.6 1.1 1.1 2.2.1l.9-.8c1-.9 1.2-1.2.3-2.4-2-2.5-4.6-3.8-7.8-3.8-6 0-11.1 5.2-11.1 11.3 0 6.3 4.8 11.2 11 11.2 3.4 0 6.5-1.7 8.3-4.6.7-1.3.4-1.7-.5-2.4zM261.2 28.7h-2.1c-.9 0-1.6 0-1.6 1.6v11.8c-.5 2.4-2.5 4.2-4.9 4.2-2.4 0-4.5-1.8-4.9-4.2V30.3c0-1.6-.8-1.6-1.6-1.6H244c-.6 0-1.1.5-1.1 1.1v11.4c.2 5.5 4.2 9.5 9.8 9.5 5.6 0 9.6-4 9.8-9.5V29.8c-.2-.6-.7-1.1-1.3-1.1zM273.6 46.7l-.3-.3c-2.4-2.4-2.4-4.1-2.4-4.1v-23c0-.6-.5-1.1-1.1-1.1h-2.5c-.6 0-1.1.5-1.1 1.1v23.4c0 2.1.8 4.1 2.3 5.6l1.8 1.8c.4.4 1.2.4 1.6 0l1.8-1.8c.3-.4.3-1.1-.1-1.6z"></path><path d="M55.3 33.1c-2.9-.5-5.7 1.4-6.3 4.3-1.4 8-8.4 13.8-16.5 13.7-9.2 0-16.7-7.6-16.7-16.8 0-9.2 7.6-16.7 16.8-16.7.7 0 1.4 0 2 .1 3 .4 5.6-1.7 6-4.7.4-3-1.7-5.6-4.7-6-1.1-.1-2.2-.2-3.3-.2C17.4 6.8 5.1 19.1 5 34.3c-.1 15.2 12.3 27.6 27.4 27.6 13.4 0 24.8-9.5 27.2-22.6.5-2.9-1.4-5.7-4.3-6.2zm-24.9-5.2c-2.1-2.1-5.5-2.1-7.6 0-2.1 2.1-2.1 5.5 0 7.6l9.8 9.8 26-26c2.1-2.1 2.1-5.5 0-7.6-2.1-2.1-5.5-2.1-7.6 0L32.5 30l-2.1-2.1z" style="fill:#d4765d"></path><path style="fill:#c15c48" d="m32.5 30 7.6 7.7L35 27.5z"></path></svg>
+                <a class="anchor"  id="products" href="">
+                    <span>Products</span>
+                    <div class="mouse_enter">
+                        <div id="main">
+                            <div id="popup1">
+                                <p>content calenders</p>
+                                <div id="andar1">
+                                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=64&q=75" alt="">
+                                    <div  id="text">
+                                        <h2>Marketing Calendar</h2>
+                                        <p>A calendar that helps you see, schedule, and share your marketing.</p>
+                                    </div>
+                                </div>
+                                <div id="andar1">
+                                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=64&q=75" alt="">
+                                    <div id="text">
+                                        <h2>Marketing Suite</h2>
+                                        <p>A family of agile marketing products to coordinate your team, projects, and process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="popup2">
+                                <div>
+                                    <p>CONTENT OPTIMIZATION</p>
+                                   <div id="popup_svg_div">
+                                        <svg  id="popup_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Headline Studio Icon" class="cos-home-product-logo"><path d="M837.929 137.963v-1.636L623.034 390.3V255.364c-85.59 0-165.174 46.549-165.174 153.161v130.394h-.195v12.256h.195v34.34l-51.732 61.14v-294.6c-85.59 0-165.174 46.549-165.174 153.161v438.457c85.59 0 165.174-46.549 165.174-153.161v-42.051l51.537-60.91v159.435c85.59 0 165.174-46.549 165.174-153.161v-142.65h.195v-59.067l50.838-60.084v314.364c85.59 0 165.174-46.549 165.174-153.162v-456.9Z" style="fill:#618be0"></path></svg>
+                                        <h3>Headline Studio</h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>MARKETING EDUCATION</p>
+                                   <div id="popup_svg_div">
+                                    <svg  id="popup_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Actionable Marketing Institute Icon" class="cos-home-product-logo"><defs><style>.ami-logo-color_svg__cls-2{fill:#8256e7}.ami-logo-color_svg__cls-3{fill:#b49af0}.ami-logo-color_svg__cls-5{fill:#231f20;mix-blend-mode:multiply;opacity:.2}</style></defs><g style="isolation:isolate"><g id="ami-logo-color_svg__Layer_1" data-name="Layer 1"><path class="ami-logo-color_svg__cls-2" d="M830.85 902.13 187.52 585.72l76.54-174.6 650.56 320A95.23 95.23 0 0 1 960 854.83a95.24 95.24 0 0 1-129.15 47.3Z"></path><path class="ami-logo-color_svg__cls-2" d="m513 306.29 274.79 553.35A95.22 95.22 0 0 0 912 903.37a95.22 95.22 0 0 0 45.7-129.79L683 220.51a95.23 95.23 0 0 0-124.29-43.88A95.24 95.24 0 0 0 513 306.29Z"></path><path class="ami-logo-color_svg__cls-2" d="M693.07 263.47a94.6 94.6 0 0 1-10.25 42.81L439 797.18l-170.9-84.06L512.75 220.5a95.27 95.27 0 0 1 180.32 43Z"></path><path class="ami-logo-color_svg__cls-3" d="m264.06 411.12-144.2 32.23a9.81 9.81 0 0 0-6.45 14.65l74.11 127.72Z"></path><path d="m151.35 436.74-21.49 48.79L113.41 458a9.78 9.78 0 0 1 6.44-14.62Z" style="opacity:0.25;fill:#231f20;mix-blend-mode:multiply"></path><path class="ami-logo-color_svg__cls-3" d="m439 797.18-31 62.47a95.24 95.24 0 1 1-169.92-86.08l30-60.45Z"></path><path class="ami-logo-color_svg__cls-5" d="m399.79 447.95-11.92 24.06 170.9 84.04-158.98-108.1zM641.75 565.61l229.35 144.6-208.86-103.26-20.49-41.34zM597.89 477.32l88.3-173.58-72.6 205.17-15.7-31.59z"></path></g></g></svg>
+                                        <h3>Actionable Marketing Institute</h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor"  id="why_coschedule" href="">
+                  <span>Why CoSchedule</span>
+                  <div class="mouseenter_in_why">
+                    <div>
+                        <h3>Customer Stories</h3>
+                        <p>She how CoSchedule Customers have found success</p>
+                    </div>
+                    <div>
+                        <h3>Built Your Case For CoSchedule</h3>
+                        <p>Get your custom ROI report and see what your team could save by switching to CoSchedule</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="anchor"  id="Resources" href="">
+                    <span>Resources</span>
+                    <div class="mouseenter_in_Resources_">
+                        <div id="header">
+                            <div class="id">
+                                <h3>Tools</h3>
+                                <div id="tools">
+                                    <svg id="svg_tools" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="25" height="25" alt="Headline Analyzer Icon" class="resources-icon"><defs><style>.nav-resources-ha-icon_svg__cls-3,.nav-resources-ha-icon_svg__cls-5{stroke:#000;stroke-linejoin:round}.nav-resources-ha-icon_svg__cls-3{fill:none}.nav-resources-ha-icon_svg__cls-5{fill:#f37e5d}</style></defs><path style="stroke:#000;stroke-linejoin:round;fill:#fff" d="M168.39 185.86H32.42V15.02h104.77l31.2 26.46v144.38z"></path><path style="stroke:#000;stroke-linejoin:round" d="M168.39 41.48h-31.2V15.02l31.2 26.46z"></path><path class="nav-resources-ha-icon_svg__cls-3" d="M43.56 142.54h115.03M43.56 155.75h43.42M43.56 108.42h43.42M98.04 108.42h43.43M43.56 121.64h65.78M98.04 155.75h37.05"></path><path style="stroke-linecap:round;stroke:#000;stroke-linejoin:round;fill:#fff" d="M19.59 55.21h139.37v31.41H19.59z"></path><path class="nav-resources-ha-icon_svg__cls-5" d="M33 64.73h36.97v12.38H33zM77.07 64.73h68.48v12.38H77.07z"></path></svg>
+                                    <div>
+                                        <h4>Headline Analyzer</h4>
+                                        <p>Write headlines that drive traffic,shares and search results</p>
+                                    </div>
+                                </div>
+                                <div id="tools">
+                                    <svg id="svg_tools" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="25" height="25" alt="Email Subject Line Tester Icon" class="resources-icon"><defs><style>.nav-resources-eslt-icon_svg__cls-1,.nav-resources-eslt-icon_svg__cls-6{fill:#fff;stroke:#231f20;stroke-linejoin:round}.nav-resources-eslt-icon_svg__cls-6{stroke:#000;fill:none}</style></defs><path class="nav-resources-eslt-icon_svg__cls-1" d="M22.3 84.18h161.59v101.04H22.3z"></path><path class="nav-resources-eslt-icon_svg__cls-1" d="m183.89 183.72-80.8-69.16-80.79 69.16"></path><path style="stroke-linecap:round;stroke-linejoin:round;stroke:#231f20;fill:#fff" d="m103.09 15.02 80.8 69.16H22.3l80.79-69.16z"></path><path style="stroke-linecap:round;stroke-linejoin:round;stroke:#231f20" d="m183.88 84.18-22.22 19.03-58.57 50.14-54.92-47.02L22.3 84.18h161.58z"></path><path style="stroke:#000;stroke-linejoin:round;fill:#fff" d="M161.66 40.94v62.27l-58.57 50.14-54.92-47.02V40.94h113.49z"></path><path style="fill:#f37e5d;stroke:#000;stroke-linejoin:round" d="M56.36 56.94h97.13v14.7H56.36z"></path><path class="nav-resources-eslt-icon_svg__cls-6" d="M56.36 84.18h34.82M100.06 84.18h34.82M56.36 95.21h52.76"></path></svg>
+                                    <div>
+                                        <h4>Email Subject Line Tester</h4>
+                                        <p>Write email subject lines that drive more opens,clicks and conversion </p>
+                                    </div>
+                                </div>
+                                <div id="tools">
+                                    <svg id="svg_tools" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="25" height="25" alt="Social Message Optimizer Icon" class="resources-icon"><defs><style>.nav-resources-smo-icon_svg__cls-1{fill:#fff}.nav-resources-smo-icon_svg__cls-1,.nav-resources-smo-icon_svg__cls-2{stroke:#000}.nav-resources-smo-icon_svg__cls-1{stroke-miterlimit:10}.nav-resources-smo-icon_svg__cls-2{fill:#f37e5d;stroke-linejoin:round}</style></defs><path class="nav-resources-smo-icon_svg__cls-1" d="M172.35 51.17v108.9a2.57 2.57 0 0 1-2.58 2.57H68.5a2.6 2.6 0 0 0-1.7.64l-23.64 20.81a2.58 2.58 0 0 1-4.28-2l.19-16.89a2.57 2.57 0 0 0-2.57-2.6H13.34a2.58 2.58 0 0 1-2.58-2.57V51.17a2.58 2.58 0 0 1 2.58-2.57h156.43a2.57 2.57 0 0 1 2.58 2.57Z"></path><path class="nav-resources-smo-icon_svg__cls-2" d="M34.22 73.31h114.67v12.38H34.22zM34.22 97.43h75.11v12.38H34.22zM117.63 97.43h25.15v12.38h-25.15zM34.22 121.55H86.1v12.38H34.22zM94.12 121.55H146v12.38H94.12z"></path><path d="M172.35 51.17V91.7h-34.61a24.07 24.07 0 0 1-16-6c-.41-.34-.8-.71-1.18-1.09a24.23 24.23 0 0 1 2-36h47.2a2.57 2.57 0 0 1 2.59 2.56Z" style="stroke-miterlimit:10;stroke:#000"></path><path class="nav-resources-smo-icon_svg__cls-1" d="M142.8 88.24H172l2.9-48.44h-32.1A24.22 24.22 0 0 0 118.58 64a24.22 24.22 0 0 0 24.22 24.24Z"></path><rect class="nav-resources-smo-icon_svg__cls-1" x="163.92" y="39.8" width="25.32" height="12.11" rx="6.06"></rect><rect class="nav-resources-smo-icon_svg__cls-1" x="161.07" y="51.91" width="25.32" height="12.11" rx="6.06"></rect><rect class="nav-resources-smo-icon_svg__cls-1" x="157.71" y="64.02" width="25.32" height="12.11" rx="6.06"></rect><rect class="nav-resources-smo-icon_svg__cls-1" x="153.86" y="76.13" width="25.32" height="12.11" rx="6.06"></rect><path d="M126.55 46c4-3.65 10.87-10.89 13-19.79s5.55-11.23 8-11.23c4.71 0 9.34 4.16 6.43 14.52-1.4 5-2.82 9.71-3.92 13.23a29.6 29.6 0 0 0-1.06 12.2c.54 4.7 1 10.91 0 13.72-1.74 4.81-3.64 7.16-7.86 9.34" style="stroke-linecap:square;stroke-miterlimit:10;stroke:#000;fill:#fff"></path></svg>
+                                    <div>
+                                        <h4>Social Message Optimizer</h4>
+                                        <p>Create powerful social message that convert</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="id">
+                                <div  id="shadow">
+                                    <h3>LEARN</h3>
+                                    <p>Marketing Blog</p>
+                                    <p>CoSchedule Guide</p>
+                                    <p>Agile Marketing Guide</p>
+                                    <p>Marketing Dictionary</p>
+                                </div>
+                                
+                                <div id="shadow">
+                                    <h3>Books</h3>
+                                    <p>10x Marketing Formula</p>
+                                    <p>Get Started with Agile Marketing</p>
+                                </div>
+                            </div>
+                            <div class="id">
+                                <div  id="shadow">
+                                    <h3>TOPIC LIBRARIES</h3>
+                                    <p>Marketing</p>
+                                    <p>Marketing Ideas</p>
+                                    <p>Marketing Stretegy</p>
+                                    <p>Content Marketing</p>
+                                </div>
+                                <div id="shadow">
+                                    <h3>Report</h3>
+                                    <p>Marketing stretegy Report</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor"  id="Pricing" href="">
+                     <span> Pricing</span> 
+                    </a>
+            </div>
+            
+                <div id="secondPartOfNavbar">
+                    <a class="anchor" href="signin.html">
+                        <span>Sign In</span>
+                    </a>
+                    <a id="changes" class="anchor" href="">
+                        <span>Get A Demo</span>
+                     </a>
+                    <button id="create_my_calender">Create My Calender</button>
+                </div>
+            
+        </div>
+            <div id="under_navbar">
+                <h1 id="head">Organize All Of Your Marketing In One Place. From Any Place.</h1>
+                <p class="para1">Get more done in less time with the only work management software for marketers.</p>
+                <button id="GetStartedFree">Get Started Free</button>
+                <p class="para2">Why not? It's free forever.</p>
+            </div>   
+    </div>    
+    <div id="image_stable_div">
+        <img id="image_absolute" src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75" alt="">
+       
+        <div id="forbs_images">
+            <h2 class="fobes_h2">30,000 marketers start their day with CoSchedule</h2>
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fyamaha-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Funicef-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fvericast-logo2.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fwalgreens-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fdictionary-com-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fp-and-g-logo.webp&w=256&q=75" alt="">
+            <img class="image_in_side_absolute_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fschwans-logo.webp&w=256&q=75" alt="">
+        </div>
+    </div>
+    <div class="our_products_div">
+        <h2 id="our_products">Our Products</h2>
+        <div  id="main_pages_div">
+        
+            <div>
+                <div id="color_image_of_main_div">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fmc-product-background.png&w=1920&q=100" alt="">
+                    <div id="innertext_div">
+                        <img id="chota_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=64&q=75" alt="">
+                        <h3 id="marketingH3">Marketing calender</h3>
+                        <p id="marketingP">A calendar that helps you see, schedule, and share your marketing.</p>
+                        <ul>
+                            <li id="marketingP">See everything together in one place</li>
+                            <li id="marketingP">Share your progress with higher-ups</li>
+                            <li id="marketingP">Show what your marketing is doing</li>
+                        </ul>
+                        <button class="explore_more1"><a href="MarkCalender.html">Explore More</a></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <div id="color_image_of_main_div">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fsuite-product-background.png&w=1920&q=100" alt="">
+                    <div id="innertext_div">
+                        <img id="chota_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=64&q=75" alt="">
+                        <h3 id="marketingH3">Marketing Suite</h3>
+                        <p id="marketingP">A family of agile marketing products to coordinate your team, projects, and process.</p>
+                        <ul>
+                            <li id="marketingP">Manage marketing requests</li>
+                            <li id="marketingP">Eliminate content bottlenecks</li>
+                            <li id="marketingP">Maximize resources to increase output</li>
+                        </ul>
+                        <button class="explore_more1"><a href="marketing.html">Explore More</a></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <div id="color_image_of_main_div">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhs-product-background.png&w=1920&q=100" alt="">
+                    <div id="innertext_div">
+                        <svg  id="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Headline Studio Icon" class="cos-home-product-logo"><path d="M837.929 137.963v-1.636L623.034 390.3V255.364c-85.59 0-165.174 46.549-165.174 153.161v130.394h-.195v12.256h.195v34.34l-51.732 61.14v-294.6c-85.59 0-165.174 46.549-165.174 153.161v438.457c85.59 0 165.174-46.549 165.174-153.161v-42.051l51.537-60.91v159.435c85.59 0 165.174-46.549 165.174-153.161v-142.65h.195v-59.067l50.838-60.084v314.364c85.59 0 165.174-46.549 165.174-153.162v-456.9Z" style="fill:#618be0"></path></svg>
+                       
+                        <h3 id="marketingH3">Headline Studio</h3>
+                        <p id="marketingP">Write better headlines that will boost your traffic.</p>
+                        <ul>
+                            <li id="marketingP">Score your headlines based on proven data</li>
+                            <li id="marketingP">Improve headlines with smart suggestions</li>
+                            <li id="marketingP">Find the high-scoring words instantly</li>
+                        </ul>
+                        <button class="explore_more1"><a href="headline.html">Explore More</a></button>
+                    </div>
+                </div>
+               
+            </div>
+            <div>
+                <div id="color_image_of_main_div">
+                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fami-product-background.png&w=1920&q=100" alt="">
+                    <div id="innertext_div">
+                        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Actionable Marketing Institute Icon" class="cos-home-product-logo"><defs><style>.ami-logo-color_svg__cls-2{fill:#8256e7}.ami-logo-color_svg__cls-3{fill:#b49af0}.ami-logo-color_svg__cls-5{fill:#231f20;mix-blend-mode:multiply;opacity:.2}</style></defs><g style="isolation:isolate"><g id="ami-logo-color_svg__Layer_1" data-name="Layer 1"><path class="ami-logo-color_svg__cls-2" d="M830.85 902.13 187.52 585.72l76.54-174.6 650.56 320A95.23 95.23 0 0 1 960 854.83a95.24 95.24 0 0 1-129.15 47.3Z"></path><path class="ami-logo-color_svg__cls-2" d="m513 306.29 274.79 553.35A95.22 95.22 0 0 0 912 903.37a95.22 95.22 0 0 0 45.7-129.79L683 220.51a95.23 95.23 0 0 0-124.29-43.88A95.24 95.24 0 0 0 513 306.29Z"></path><path class="ami-logo-color_svg__cls-2" d="M693.07 263.47a94.6 94.6 0 0 1-10.25 42.81L439 797.18l-170.9-84.06L512.75 220.5a95.27 95.27 0 0 1 180.32 43Z"></path><path class="ami-logo-color_svg__cls-3" d="m264.06 411.12-144.2 32.23a9.81 9.81 0 0 0-6.45 14.65l74.11 127.72Z"></path><path d="m151.35 436.74-21.49 48.79L113.41 458a9.78 9.78 0 0 1 6.44-14.62Z" style="opacity:0.25;fill:#231f20;mix-blend-mode:multiply"></path><path class="ami-logo-color_svg__cls-3" d="m439 797.18-31 62.47a95.24 95.24 0 1 1-169.92-86.08l30-60.45Z"></path><path class="ami-logo-color_svg__cls-5" d="m399.79 447.95-11.92 24.06 170.9 84.04-158.98-108.1zM641.75 565.61l229.35 144.6-208.86-103.26-20.49-41.34zM597.89 477.32l88.3-173.58-72.6 205.17-15.7-31.59z"></path></g></g></svg>
+                        <h3 id="marketingH3">Actionable Marketing Institute</h3>
+                        <p id="marketingP">Develop new marketing skills in 30 minutes (or less).</p>
+                        <ul>
+                            <li id="marketingP">Improve your marketing with fluff-free training</li>
+                            <li id="marketingP">Spend less time learning & more time doing</li>
+                            <li id="marketingP">Learn from industry pros you trust</li>
+                        </ul>
+                        <button class="explore_more4">Explore More</button>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="below_main_div">
+        <div id="the_fastest">
+            <h2>The fastest growing marketing work management software</h2>
+            <p>CoSchedule is trusted by 30,000 marketers in 100+ countries.</p>
+        </div>
+        <div id="dede_kuchh_main">
+            <div id="dedo_kuchh_v">
+                <h2>Gartner</h2>
+                <h4>Magic Quadrant</h4>
+                <p>The Gartner Magic Quadrant™ for Content Marketing Platforms 2022</p>
+            </div>
+            <div class="dedo" id="dedo_kuchh_v">
+                <img id="first_image_of_dedo_kuchh_v" src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Finc-5000-logo.png&w=256&q=75" alt="">
+                <p>One Of The Fastest-Growing Marketing Platforms 3 Years In a Row</p>
+            </div>
+            <div class="dedo" id="dedo_kuchh_v">
+                <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="">
+                <p>Awarded High Performer in 7 Product Categories</p>
+            </div>
+        </div>
+    </div>
+    <div id="demo_request">
+        <h2>Organize all of your marketing in one place</h2>
+        <button id="demo_request_button">Request Your Demo Now</button>
+    </div>
+    <div id="footer">
+        <div id="last_div">
+            <div>
+                <svg id="last_div_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" style="enable-background:new 0 0 150 150" xml:space="preserve" width="50" height="50"><path d="M131.8 71.1c-7.4-1.3-14.5 3.6-15.8 10.9-3.7 20.1-21.2 34.7-41.7 34.6-23.3-.1-42.2-19.1-42.1-42.4.1-23.2 19.1-42.1 42.4-42 1.7 0 3.4.1 5.1.3 7.4.9 14.2-4.4 15.2-11.8.9-7.5-4.4-14.2-11.8-15.2-2.8-.3-5.6-.5-8.4-.5C36.5 4.9 5.2 35.9 5.1 74.2s30.9 69.5 69.2 69.7c33.7.1 62.5-23.8 68.6-57 1.2-7.4-3.7-14.5-11.1-15.8zM69 57.9c-5.3-5.3-13.9-5.3-19.2 0-5.3 5.3-5.3 13.9 0 19.2l24.7 24.7 65.6-65.6c5.3-5.3 5.3-13.9 0-19.2-5.3-5.3-13.9-5.3-19.2 0L74.5 63.4 69 57.9z" style="fill:#d4765d"></path><path style="fill:#c15c48" d="m74.5 63.4 19.2 19.2-12.9-25.5z"></path></svg>
+            </div>
+            <div class="last_div_p">
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="last_div_p">Request A Demo</div>
+            <div  class="last_div_p">
+                <a href="signin.html"> Sign In</a>
+            </div>
+            <div id="last_div_images">
+                <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="">
+                <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75" alt="">
+                <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75" alt="">
+            </div>
+        </div>
+        <div id="footer_divs">
+            <div >
+                <h3>PRODUCTS</h3>
+                <div id="img_div">
+                    <img id="footer_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=64&q=75" alt="">
+                    <p><a href="MarkCalender.html">Marketing Calendar</a></p>
+                </div>
+                <div id="img_div">
+                    <img id="footer_image" src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=64&q=75" alt="">
+                    <p ><a href="marketing.html">Marketing Suite</a></p>
+                </div>
+                <div id="img_div">
+                    <svg id="footer_image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Actionable Marketing Institute Icon" class="cos-home-product-logo"><defs><style>.ami-logo-color_svg__cls-2{fill:#8256e7}.ami-logo-color_svg__cls-3{fill:#b49af0}.ami-logo-color_svg__cls-5{fill:#231f20;mix-blend-mode:multiply;opacity:.2}</style></defs><g style="isolation:isolate"><g id="ami-logo-color_svg__Layer_1" data-name="Layer 1"><path class="ami-logo-color_svg__cls-2" d="M830.85 902.13 187.52 585.72l76.54-174.6 650.56 320A95.23 95.23 0 0 1 960 854.83a95.24 95.24 0 0 1-129.15 47.3Z"></path><path class="ami-logo-color_svg__cls-2" d="m513 306.29 274.79 553.35A95.22 95.22 0 0 0 912 903.37a95.22 95.22 0 0 0 45.7-129.79L683 220.51a95.23 95.23 0 0 0-124.29-43.88A95.24 95.24 0 0 0 513 306.29Z"></path><path class="ami-logo-color_svg__cls-2" d="M693.07 263.47a94.6 94.6 0 0 1-10.25 42.81L439 797.18l-170.9-84.06L512.75 220.5a95.27 95.27 0 0 1 180.32 43Z"></path><path class="ami-logo-color_svg__cls-3" d="m264.06 411.12-144.2 32.23a9.81 9.81 0 0 0-6.45 14.65l74.11 127.72Z"></path><path d="m151.35 436.74-21.49 48.79L113.41 458a9.78 9.78 0 0 1 6.44-14.62Z" style="opacity:0.25;fill:#231f20;mix-blend-mode:multiply"></path><path class="ami-logo-color_svg__cls-3" d="m439 797.18-31 62.47a95.24 95.24 0 1 1-169.92-86.08l30-60.45Z"></path><path class="ami-logo-color_svg__cls-5" d="m399.79 447.95-11.92 24.06 170.9 84.04-158.98-108.1zM641.75 565.61l229.35 144.6-208.86-103.26-20.49-41.34zM597.89 477.32l88.3-173.58-72.6 205.17-15.7-31.59z"></path></g></g></svg>
+                    <p ><a href="headline.html"> Headline Studio</a></p>
+                </div>
+                <div id="img_div">
+                    <svg  id="footer_image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="60" height="60" alt="Headline Studio Icon" class="cos-home-product-logo"><path d="M837.929 137.963v-1.636L623.034 390.3V255.364c-85.59 0-165.174 46.549-165.174 153.161v130.394h-.195v12.256h.195v34.34l-51.732 61.14v-294.6c-85.59 0-165.174 46.549-165.174 153.161v438.457c85.59 0 165.174-46.549 165.174-153.161v-42.051l51.537-60.91v159.435c85.59 0 165.174-46.549 165.174-153.161v-142.65h.195v-59.067l50.838-60.084v314.364c85.59 0 165.174-46.549 165.174-153.162v-456.9Z" style="fill:#618be0"></path></svg>
+                    <p>
+                        Actionable Marketing Institute</p>
+                </div>
+            </div>
+            <div >
+                <h3>WHY COSCHEDULE</h3>
+                <p>Customer Stories</p>
+                <p>Support</p>
+                <p>Product Announcements</p>
+                <p>Pricing</p>
+              
+            </div>
+            <div >
+                <h3>COMPANY</h3>
+                <p>About</p>
+                <p>Jobs</p>
+                <p>Press</p>
+                <p>Contact Us</p>
+                <p>Affiliate Program</p>
+             
+            </div>
+            <div >
+                <h3>RESOURCES</h3>
+                <p>Marketing Blog</p>
+                <p>CoSchedule Guide</p>
+                <p>Marketing Strategy Report</p>
+                <p>Agile Marketing Guide</p>
+                <p>Actionable Marketing Podcast</p>
+                <p>10x Marketing Formula Book</p>
+                <p>Get Started With Agile Marketing Book</p>
+            </div >
+            <div>
+                <h3>TOPIC LIBRARIES</h3>
+                <p>Marketing</p>
+                <p>Marketing Ideas</p>
+                <p>Marketing Strategy</p>
+                <p>Content Marketing</p>
+               
+            </div>
+            <div >
+                <h3>TOOLS</h3>
+                <p>Headline Analyzer</p>
+                <p>Email Subject Line Tester</p>
+                <p>Social Message Optimizer</p>
+                <p>Marketing Dictionary</p>
+            </div>
+        </div>
+    </div>
+        
+    <!-- <div id="under_navbar">
+        <h1 id="head">Organize All Of Your Marketing In One Place. From Any Place.</h1>
+        <p class="para1">Get more done in less time with the only work management software for marketers.</p>
+        <button id="create_my_calender">Get Started Free</button>
+        <p class="para2">Why not? It's free forever.</p>
+    </div>    -->
+</body>
+</html> 
+<script>
+
+let count = 0
+let create_my_calender  = document.getElementById("create_my_calender")
+ let GetStartedFree = document.getElementById("GetStartedFree")
+let changes = document.querySelector("#changes>span")
+let id = setInterval(() => {
+    if(count===5){
+        changes.innerText = "Get Started Free"
+        GetStartedFree.innerText = "Request Your Demo Now"
+
+        GetStartedFree.style.width = "300px"
+        create_my_calender.innerText = "Get A Demo"
+        clearInterval(id)
+    }
+    console.log("sdfg")
+    count++
+   
+     }, 1000);
+
+
+</script>
