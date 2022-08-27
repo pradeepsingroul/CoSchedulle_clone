@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calednderOrganisation</title>
+</head>
+<style>
+    #navbar{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #navbar>div{
+        
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    #navbar>div>div{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    #navbar>div img{
+        width: 180px;
+        height: 41px;
+    }
+    #navbar button{
+        background-color: #ef7154;
+        color: white;
+        border: solid #ef7154;
+        border-radius: 5px;
+        font-size: medium;
+        padding: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #navbar select{
+        background-color: white;
+        border: solid white;
+        font-weight: 100;
+        font-size: 20px;
+        
+    }
+    #finalBox1{
+        background: linear-gradient(90deg,#f37e5d 0,#f9a97d);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    #finalBox1>div{
+        display: flex;
+        background-color: #ef7154;
+        height: 40px;
+    }
+    #finalBox1>div img{
+        height: 40px;
+        width: 40px;
+    }
+    #finalBox1>div h1{
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+}
+    
+    #finalBox1>h2{
+        font-weight: 400;
+        font-size: 50px;
+        letter-spacing: -.3px;
+        line-height: 130%;
+        color: white;
+        text-align: center;
+}
+#finalBox1>h3{
+font-size: 24px;
+color: white;
+font-weight: lighter;
+text-align: center;
+}
+#finalBox1>button{
+    background-color: #ef7154;
+    border-radius: 12px;
+    border: #ea8000;
+    color: white;
+  
+    padding: 20px 80px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+    #EditorSchedule{
+        margin: auto;
+        height: 498.3;
+        width: 920px;
+       
+        
+    }
+    #EditorSchedule>img{
+        margin: auto;
+        width: 100%;
+        
+    }
+    
+    #quote>div{
+      font-size: 22px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      line-height: 170%;
+      max-width: 800px;
+      margin: auto;
+      justify-content: center;
+    }
+    #quoteBox1>h3{
+      font-size: 22px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      line-height: 170%;
+    }
+    #quoteBox2{
+        display: flex;
+        align-items: center;
+
+    }
+    #quoteBox2>div+div{
+        
+        width: 199.56px;
+        height: 82px;
+    }
+    #quoteBox2>div>img{
+       
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    #quoteBox2>div>p{
+        
+        font-size: 14px;
+        margin: 5px 0;
+        line-height: 130%;
+    }
+    #quoteBox2>div>h5{
+        
+        line-height: 130%;
+        font-weight: 400;
+        margin: 10px 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 5px 0;
+    }
+    #quoteBox2>div>a{
+        
+        font-weight: 400;
+        display: block;
+        color: #ea8000;
+        text-decoration: underline;
+        line-height: 130%;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    #features{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 1304px;
+        height: 381px;
+        column-gap: 20px;
+        overflow: hidden;
+        padding: 40px 30px;
+        margin: auto;
+    }
+    #features image{
+        width: 80px;
+        height: 80px;
+    }
+    #features h4{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    #features p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 150%;
+        color: grey;
+    }
+
+    .repeatedBox{
+       display: flex;
+       margin: auto;
+       
+       width: 1304px;
+       height: 685px;
+       margin-bottom: 10px;
+       margin-top: 10px;
+    }
+    .repeatedBox div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+        height: 652.5px;
+        width: 652.5px;
+        }
+
+    
+    .repeatedBox img{
+        min-height: 100%;
+        max-width: 100%;
+    }
+
+    .repeatedBox h5{
+        font-weight: 400;
+        margin: 10px 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .repeatedBox h2{
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: -.3px;
+        line-height: 130%;
+    }
+
+    .repeatedBox p{
+        color: #4b4b4b;
+        font-size: 18px;
+        line-height: 170%;
+    }
+    .similarBox>div{
+        margin: auto;
+        max-width: 900px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .similarBox h5{
+        font-weight: 400;
+        margin: 10px 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        max-width: 720px;
+        
+        
+
+    }
+    
+    .similarBox h2{
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: -.3px;
+        line-height: 130%;
+        max-width: 720px;
+    }
+    .similarBox p{
+        
+        font-size: 18px;
+        line-height: 170%;
+        max-width: 700px;
+    }
+    .similarBox>div>img{
+      max-width: 920px;
+      max-height: 250px;
+     
+    
+    }
+    .similarBox>div>div{
+     display: flex;
+     justify-content: center;
+     
+    }
+    .similarBox>div>div>img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    #finalBox2{
+        background: linear-gradient(90deg,#f37e5d 0,#f9a97d);
+        max-width: 960px;
+        max-height: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    #finalBox2>h2{
+        font-weight: 400;
+        font-size: 50px;
+        letter-spacing: -.3px;
+        line-height: 130%;
+        max-width: 800px;
+        max-height: 120px;
+        color: white;
+        text-align: center;
+}
+#finalBox2>h3{
+max-width: 400px;
+font-size: 24px;
+color: white;
+font-weight: lighter;
+text-align: center;
+}
+#finalBox2>button{
+    color: #f37e5d;
+    box-shadow: 5px 5px 20px 0 rgba(151,42,11,.4);
+    background-color: white;
+    border: solid white;
+  
+    padding: 20px 80px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+    
+   
+        
+</style>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <a href="">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </a>
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="">Explore</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button>Get A Demo</button>
+        </div>
+    </div>
+
+    <div id="finalBox1">
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcoschedule-marketing-calendar-product-icon-sm.22ea00e4.png&w=48&q=75" alt="">
+            <div>
+                <h1>Calender Organiser</h1>
+            </div>
+        </div>
+        <h2>Visualize Your Entire Marketing Strategy In Real-Time</h2>
+        <h3>Get global visibility of every project & campaign in a cross-functional calendar.</h3>
+        <button>Get Started Free</button>
+    </div>
+</body>
+
+    <div id="EditorSchedule">
+        <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-header.8ca5b299.png&w=1080&q=75" alt="">
+    </div>
+
+    <div id="quote">
+        <div id="quoteBox1">
+            <h3>"With CoSchedule Marketing Suite, I can share custom views with specific departments, giving them a quick snapshot on what matters to them."</h3>
+        </div>
+        <div id="quoteBox2">
+            <div>
+                <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbri-gore-lamar-univ.39c04960.png&w=96&q=75" alt="">
+            </div>
+            <div>
+                <p>Bri Gore, Social Media Manager</p>
+                <h5>Lamar University</h5>
+                <a href="">Bries's Story</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="features">
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-visibility-icon.68968196.png&w=96&q=75" alt="">
+            <h4>See every project & campaign in a single calendar</h4>
+            <p>Understand how everything connects at a glance with a unified calendar of record.</p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-centralize-icon.89dbc962.png&w=96&q=75" alt="">
+            <h4>Centralize your publishing & promotion</h4>
+            <p>Plan, create, & publish content from your calendar without missing a step.</p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-in-the-know-icon.3eced2e1.png&w=96&q=75" alt="">
+            <h4>Keep stakeholders "in the know"</h4>
+            <p>Keep stakeholders "in the know"
+
+                Give execs live updates of your work in progress without makeshift workarounds.</p>
+        </div>
+        <div>
+            <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-separate-workspaces-icon.91f5388a.png&w=96&q=75" alt="">
+            <h4>Separate workspaces for every team</h4>
+            <p>Create focused workspaces by filtering projects & campaigns by team members, departments, initiatives, & more.</p>
+        </div>
+    </div>
+
+    <div class="repeatedBox">
+        <div>
+            <h5>Marketing Calendar</h5>
+            <h2>See All Of Your Projects On One Calendar</h2>
+            <p>Manage a single publishing calendar that serves as the blueprint for your content, events, and more. See how work supports your goals at a glance to focus on results.</p>
+        </div>
+        <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-marketing-calendar.a2b32de9.png&w=1920&q=75" alt=""></div>
+    </div>
+
+    <div class="repeatedBox">
+       <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-marketing-campaigns.c7132c92.png&w=1920&q=75" alt=""></div>
+       <div>
+        <h5>Marketing Campaigns</h5>
+        <h2>Coordinate & Execute Multi-Project Campaigns</h2>
+        <p>Group multiple, related projects together in a single campaign. Outline promotional timelines and project plans on an isolated calendar view, so you can stay focused on specific initiatives.</p>
+    </div>
+    </div>
+
+    <div class="repeatedBox">
+        <div>
+            <h5>Sub-Calendar Views</h5>
+            <h2>Focus Without Distractions</h2>
+            <p>Filter your calendar to focus on the work that you care about. Create custom Sub-Calendars for emails, blog posts, internal departments, or team members - just to name a few. And get a laser-focused view of specific marketing initiatives and campaigns.</p>
+        </div>
+        <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-sub-calendars.9335dbd9.png&w=1920&q=75" alt=""></div>
+    </div>
+
+    <div class="repeatedBox">
+       <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-ideas-backlog.bd602446.png&w=1920&q=75" alt=""></div>
+       <div>
+        <h5>Ideas Backlog & Kanban Board</h5>
+        <h2>Triage & Prioritize Projects</h2>
+        <p>Prioritizing projects is a challenge when everything seems “super important/urgent/on fire.” Idea Board empowers you with a customizable Kanban Board to field requests, earn stakeholder buy-in before execution, and save ideas without distracting your current work schedule.</p>
+    </div>
+    </div>
+
+    <div class="repeatedBox">
+        <div>
+            <h5>Read-Only Views</h5>
+            <h2>Keep Higher-Ups "In The Know"</h2>
+            <p>With Read-Only Views, you can create custom filtered views of your calendar that are interactive, update in real-time, and give your leadership and/or stakeholders the details they want (nothing more, nothing less).</p>
+        </div>
+        <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-read-only-views.3006a538.png&w=1920&q=75" alt=""></div>
+    </div>
+
+    <div class="similarBox" style=" background-color: rgb(241, 229, 229);">
+        <div> <h5>Custom Color Labels, Project Types, And Tags</h5>
+         <h2>Personalize Your Calendar With Custom Taxonomies</h2>
+         <p>Tailor your settings to easily categorize, prioritize, and emphasize what’s on your calendar. Sort through your calendar quickly to find exactly what you need.</p>
+         <div>
+             <div>
+                 <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-color-labels-icon.7b4fa9fd.png&w=128&q=75" alt="">
+                 <h5>Color Labels</h5>
+             </div>
+             <div>
+                 <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-types-icon.7599e17e.png&w=128&q=75" alt="">
+                 <h5>Project Type</h5>
+             </div>
+             <div>
+                 <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-tags-icon.b2832ed5.png&w=128&q=75" alt="">
+                 <h5>Tags</h5>
+             </div>
+         </div></div>
+     </div>
+
+    <div class="repeatedBox">
+       <div><img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-drag-and-drop-scheduling.b53d250c.png&w=1920&q=75" alt=""></div>
+       <div>
+        <h5>Drag & Drop Scheduling</h5>
+        <h2>Easily Schedule & Reschedule Campaigns/h2>
+        <p>Priorities change? Update entire campaign timelines in seconds. Simply drag and drop your campaign or project to a new day, and everything associated with it will automatically sync to its new time.</p>
+    </div>
+    </div>
+
+   
+
+    <div class="similarBox">
+       <div>
+        <h5>Custom Statuses</h5>
+        <h2>Sharpen Your Content Marketing Process</h2>
+        <p>Remove blockers from your editorial process that slow work, cause team frustration, and prevent you from publishing. Personalize your workflow stages to match the process that’s unique to your team to keep content moving forward efficiently.</p>
+        <img src="https://coschedule.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcalendar-organizer-custom-statuses.2bcbddc7.png&w=1920&q=75" alt="">
+       </div>
+    </div>
+    
+    <div id="finalBox2">
+        <h2>Visualize Your Entire Marketing Strategy In Real-Time</h2>
+        <h3>See Calendar Organizer in action when you demo Marketing Suite.</h3>
+        <button>Get Started Free</button>
+    </div>
+</body>
+</html>
+
+
